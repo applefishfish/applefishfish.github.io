@@ -1,9 +1,7 @@
 /* --------------------------------------------------------
 
-Template Name: John
-Description: Personal Portfolio Template
-Version: 1.0
-Author: seven_themes
+Template Name: Jingwen
+
 
 =>  Table of Content  <=
 
@@ -167,7 +165,7 @@ Author: seven_themes
         12 - Typed Text in Home Section
 	----------------------------------------------------- */
 	$(".typed-element").typed({
-    	strings: ["i'm Jing", "i'm web Designer", "live in Charlotte,NC"],
+    	strings: ["i'm Jing", "i'm web Designer and Front-End Developer", "live in Charlotte,NC"],
     	typeSpeed: 38,
     	loop: true,
     	backDelay: 3000
