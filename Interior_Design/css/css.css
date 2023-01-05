@@ -1,0 +1,591 @@
+.top{
+    height:45px;
+    background-color:#0058AA;
+}
+.top p{
+    font-size:18px;
+    color:#ffffff;
+    line-height:25px;
+    float:right;
+    cursor:default;
+}
+/*nav*/
+
+.header {
+    padding: 20px 0 10px;
+}
+
+.logo,
+.nav_box {
+    float: left;
+}
+
+.search_box {
+    margin-top:30px;
+    float:right;
+}
+.search_box input {
+    float: left;
+    width: 215px;
+    height: 35px;
+    padding-left: 10px;
+}
+.search_box a {
+    width: 48px;
+    height: 39px;
+    float: left;
+    background: #0058AA url(../img/search.png) center center no-repeat;
+}
+
+
+
+.logo a {
+    font-size: 64px;
+    color: #0058AA;
+}
+
+.nav_box {
+    
+   
+    margin-left: 80px;
+}
+.nav_box ul{
+    display: block;
+    float:left;
+}
+
+.nav_box ul li {
+  
+   
+    float: left;
+    text-align: center;
+    margin: 0 30px;
+   
+}
+
+.nav_box ul li a {
+    color: #545454;
+    text-align: center;
+
+}
+
+.nav_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px auto;
+}
+
+
+
+/*icon image*/
+.index_icon{
+    background:url(../img/home-gry.png)center center no-repeat;
+}
+/* 鼠标移入时，切换图片 */
+.index_icon:hover {
+    background: url(../img/home-white.png) center center no-repeat;
+}
+
+
+/* 其余图标是一样的 */
+.index_aboutus {
+    background: url(../img/abouts-gry.png) center center no-repeat;
+}
+
+.index_aboutus:hover {
+    background: url(../img/abouts-white.png) center center no-repeat;
+}
+
+.server_icon {
+    background: url(../img/kefu-gry.png) center center no-repeat;
+}
+
+.server_icon:hover {
+    background: url(../img/kefu-white.png) center center no-repeat;
+}
+
+.pro_icon {
+    background: url(../img/chanpin-gry.png) center center no-repeat;
+}
+
+.pro_icon:hover {
+    background: url(../img/chanpin-white.png) center center no-repeat;
+}
+
+.tel_icon {
+    background: url(../img/fuwu-gry.png) center center no-repeat;
+}
+
+.tel_icon:hover {
+    background: url(../img/fuwu-white.png) center center no-repeat;
+}
+
+.nav_icon:hover {
+    background-color: #0058AA;
+    animation: pulse 1s infinite;
+}
+
+/*  动画效果 */
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.site-head{
+    min-width: 1152px;
+    height:150px;
+}
+.site-head .topbar{
+    height:100px;
+    background-color: #4389c4;
+    color: white;
+    line-height:32px;
+}
+
+.site-head .topbar a{
+    color: white;
+
+}
+.site-head .topbar .shortcut-links{
+    float: left;
+
+}
+.site-head .topbar .shortcut-links ul{
+    list-style-type:none;
+   
+
+
+}
+/* li is under shortcut-link and under ul*/
+.site-head .topbar .shortcut-links > ul > li{
+    float: left;
+    margin-right:30px;
+    font-size: 18px;
+    
+
+}
+.site-head .header-con{
+    height: 36px;
+    padding:25px 0;
+    float: right;
+
+}
+
+.banner img{
+    width: 100%;
+   /*limited the minima banner size*/ 
+    min-width: 1152px;
+    /*垂直居中，图片不会产生缝隙*/
+    vertical-align: middle;
+
+}
+/*banner*/
+.banner{
+    position: relative;
+}
+.banner .pagnation{
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 40px;
+}
+.banner .pagnation span{
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 80%;
+    background: #fff;
+    margin: 0 5px;
+    
+}
+
+.banner .pagnation span.cur{
+    background:;
+}
+
+/*product*/
+.swiper_item{
+    margin:0 30px;
+    float:left;
+    margin-top:30px;
+    box-shadow: 10px 10px 16px 0 rgba(0,0,0,0.20);
+  
+
+}
+.swiper_item img{
+    width:171px;
+    height:171px;
+    margin-bottom:10px;
+
+}
+.swiper_item p{
+    width:171px;
+    color:#838383;
+    font-size:18px;
+}
+
+.prev {
+    position: absolute;
+    left: -30px;
+    top: 85px;
+    background: url(../img/prev.png) no-repeat;
+}
+.next {
+    position: absolute;
+    right: -30px;
+    top: 85px;
+    background: url(../img/next.png) no-repeat;
+}
+.swiper_btn>a{
+    width: 48px;
+    height: 48px;
+}
+.prev:hover,.prev:hover{
+    background: url(../img/prev_active.png) no-repeat !important;
+}
+
+.next:hover{
+    background: url(../img/next_active.png) no-repeat !important;
+}
+
+/*aboutus*/
+.aboutus{
+    width:1155px;
+    margin:30px auto 50px;
+    
+}
+.title{
+    height:70px;
+    margin:20px 0;
+    position:relative;
+
+}
+.line{
+    width:100%;
+    height:1px;
+    background:#9B9B9B;
+    position:absolute;
+}
+.text{
+    width:155px;
+    background-color:white;
+    position:absolute;
+    top: 0;
+    left:50%;
+    margin-left:-77.5px;
+    text-align:center;
+
+}
+.text h3 {
+    font-size: 32px;
+    color: #696868;
+    font-weight: normal;
+}
+.text p {
+    font-size: 18px;
+    color: #9B9B9B;
+}
+.title_line {
+    width: 93px;
+    height: 3px;
+    background: #0058AA;
+    display: inline-block;
+}
+.aboutus_bottom{
+    margin-top: 30px;
+}
+
+.aboutus_bottom>div {
+    float: left;
+}/*老师，这样写代码是什么意思？*/
+
+.about_left {
+    width: 250px;
+}
+.company {
+    font-size: 21px;
+    color: #5A5A5A;
+    margin: 10px 0;
+}
+.about_line {
+    background: #0058AA;
+    height: 4px;
+    width: 105px;
+}
+.intro {
+    font-size: 18px;
+    color: #7B7C7C;
+    line-height: 26px;
+    margin: 20px 0;
+}
+.more {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 38px;
+    width: 130px;
+    background: #0058AA;
+    text-align: center;
+
+}
+.more:hover{
+    animation: txtShadow 1s infinite;
+ }/*老师，这样写代码是什么意思？*/
+ 
+
+
+ @keyframes txtShadow {
+    0% {
+        transform:rotate(9deg);
+         
+    }
+    50% {
+        transform:rotate(-9deg);
+
+    }
+    100%{
+        transform:rotate(9deg);
+    }
+
+}/*老师，这样写代码是什么意思？@keyframes是什么意思,是一种动画效果吗
+*/
+
+.about_middle {
+    width: 630px;
+}
+.about_middle_img{
+    width: 384px;
+    height: 256px;
+    overflow: hidden;/*超出*/
+    margin:0 auto;
+}
+
+.about_middle img {
+    width: 384px;
+    transition: transform 1s;/*过度*/
+}
+.about_middle img:hover{
+    transform: scale(1.2);/*transition过渡一般是固定的平移，旋转，缩放scale*/
+}
+
+.about_right>a {
+    width: 183px;
+    padding: 8px 0 8px 90px;
+    color: white;
+    margin-top: 10px;
+    transition: background-color 1s;
+}/*.about_right>a 这是什么意思*/
+
+.about_right>a:hover{
+    background-color: #0058AA;
+}
+.online {
+    background: #CCCCCC url(../img/liuyan.png) 30px center no-repeat;
+}
+
+.advertising {
+    background: #CCCCCC url(../img/guanggao.png) 30px center no-repeat;
+}
+
+.network {
+    background: #CCCCCC url(../img/wangluo.png) 30px center no-repeat;
+}
+
+.about_right>a span {
+    display: block;
+}/*子选择器.about_right下的子标签a span*/
+
+.about_right span:first-child {
+    font-size: 22px;
+}/*first-child序号选择器*/
+
+.about_right span:nth-child(2) {
+    font-size: 12px;
+}/*span:nth-child(2)什么意思*/
+
+
+
+/*recommend*/
+.recommend{
+    background-color: #f7f7f7;
+    padding-top:50px;
+
+}
+.recommend .title{
+    height:85px;
+
+}
+.recommend .text{
+    background: transparent;
+    width: auto;
+    margin-left: -115px;
+  
+}
+.recommend_inner {
+    width: 1155px;
+    margin: 0 auto;
+   
+}
+.recommend_swiper {
+    position: relative;
+}
+
+
+.recommend_swiper_item {
+    width: 345px;
+    height: 326px;
+   
+    float: left;
+    margin:20px;
+    position: relative;
+ 
+
+
+}
+.recommend_swiper_item img {
+    width: 100%;
+    height: 100%;
+}/*老师，这里为什么将图片设置为100%*/
+
+.recommend_swiper_item p {
+    width: 325px;
+    padding-left: 20px;
+    line-height: 45px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;/*子绝父相*/
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+
+.recommend_btn>a {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+}
+
+.recommend_btn .prev {
+    background: url(../img/prev.png) no-repeat;
+    left: -50px;
+}
+
+.recommend_btn .next {
+    background: url(../img/next.png) no-repeat;
+    right: -50px;
+}
+
+
+/*news*/
+
+
+
+/*news*/
+.news {
+    width: 1155px;
+    margin: 0 auto;
+}
+.news_detail{
+    margin: 30px 0 50px 0;
+}
+
+.news_item {
+    width: 50%;
+    float: left;
+    margin-top: 40px;
+}
+
+.news_item>div {
+    float: left;
+}
+
+.news_item_left {
+    width: 82px;
+    height: 82px;
+    position: relative;
+}
+.news_item_left:hover{
+    animation: circle 1s;
+}
+
+@keyframes circle {
+    0%{
+        top: -20px;
+    }
+    100%{
+        top: 0px;
+    }
+
+}
+.news_item_left span {
+    font-size: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -28px;
+    margin-left: -23px;
+}
+
+.news_item_left img {
+    width: 100%;
+    height: 100%;
+}
+
+.news_item_right {
+    width: 400px;
+    margin-left: 20px;
+}
+
+.news_item_right h4 {
+    font-size: 21px;
+    color: #4A4A4A;
+    font-weight: normal;
+}
+
+.news_item_right p {
+    font-size: 18px;
+    color: #807E7E;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.footer_top{
+    background: #06142F;
+}
+.footer_bottom{
+    background: #202C46;
+}
+.footer_inner{
+    width: 1150px;
+    margin:0 auto;
+    color: white;
+}
+.footer_inner h3,.footer_detali{
+    float: left;
+}
+.footer_inner h3{
+    font-size: 48px;
+    line-height: 210px;
+}
+.footer_detali{
+    margin: 55px 0 0 100px;
+    line-height: 40px;
+}
+.footer_bottom p{
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
