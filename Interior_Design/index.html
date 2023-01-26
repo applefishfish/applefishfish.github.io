@@ -1,3 +1,5 @@
+
+<!--backup-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,16 +59,30 @@
     </header>
     
     <!--banner-->
-    <section class="banner">
-        <img src="img/banner05.jpg" alt="">
-        <div class="pagnation">
+    <section class="banner" id="banner">
+        <ul id="carousel_lsit" class="carousel_lsit">
+            <li>
+                <img src="img/banner01.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/banner02.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/banner03.jpg" alt="">
+            </li>
+        </ul>
+        <div class="banner_btn">
+            <a href="javascript:;" id="right_btn" class="next"></a>
+            <a href="javascript:;" id="left_btn" class="prev"></a>
+        </div>
+        <ol class="circles" id="circle_ol">
            
-            <span class="cur"></span>
-            <span class="cur"></span>
-            <span class="cur"></span>
+            <li data-n="0" class="current"></li>
+            <li data-n="1" class=""></li>
+            <li data-n="2" class=""></li>
 
          
-        </div>  
+        </ol>  
         <nav class="banner-nav">
             <ul>
                 <li>
@@ -108,44 +124,58 @@
             </ul>
         </nav>
         
-        </div>
-
+       <script src="js/carousle.js"></script>
     </section>
     <!--product-->
     <section class="product">
+       
         <div class="inner">
             <div class="swiper_img clearfix">
-                <div class="swiper_item">
-                    <img src="img/product01.png" alt="">
+                <ul id="product_carousel_lsit" class="product_carousel_lsit">
+                <li class="swiper_item">
+                    <img src="img/product01-product01.png" alt="">
                     <p>Lorem ipsum dolor sit</p>
 
-                </div>
-                <div class="swiper_item">
-                    <img src="img/product02.png" alt="">
+                </li>
+                <li class="swiper_item">
+                    <img src="img/product02-product02.png" alt="">
                     <p>Lorem ipsum dolor sit</p>
 
-                </div>
-                <div class="swiper_item">
-                    <img src="img/product03.png" alt="">
+                </li>
+                <li class="swiper_item">
+                    <img src="img/product03-product03.png" alt="">
                     <p>Lorem ipsum dolor sit</p>
 
-                </div>
-                <div class="swiper_item">
-                    <img src="img/product04.png" alt="">
+                </li>
+                <li class="swiper_item">
+                    <img src="img/product04-product04.png" alt="">
                     <p>Lorem ipsum dolor sit</p>
 
-                </div>
-                <div class="swiper_item">
-                    <img src="img/product05.png" alt="">
+                </li>
+                <li class="swiper_item">
+                    <img src="img/product05-product05.png" alt="">
                     <p>Lorem ipsum dolor sit</p>
-
-                </div>
-                
+                    </li>
+                    <li class="swiper_item">
+                        <img src="img/product06-product06.png" alt="">
+                        <p>Lorem ipsum dolor sit</p>
+                        </li>
+                        <li class="swiper_item">
+                            <img src="img/product07-product07.png" alt="">
+                            <p>Lorem ipsum dolor sit</p>
+                            </li>
+                            <li class="swiper_item">
+                                <img src="img/product08-product08.png" alt="">
+                                <p>Lorem ipsum dolor sit</p>
+                                </li>
+                               
+                </li>
+            </ul>   
 
             </div>
             <div class="swiper_btn">
-                <a href="javascript:;" class="prev"></a>
-                <a href="javascript:;" class="next"></a>
+                <a href="javascript:;" id="right_btn1" class="next"></a>
+                <a href="javascript:;" id="left_btn1" class="prev"></a>
             </div>
 
         </div>
@@ -164,7 +194,7 @@
         <div class="aboutus_bottom clearfix">
             <div class="about_left">
                 
-                <p class="company">company</p>
+                <p class="company">Company</p>
                 <div class="about_line"></div>
                 <p class="intro">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
                 <a href="javascript:;" class="more">Learn More</a>
@@ -204,28 +234,42 @@
     
         <div class="recommend_swiper">
         <div class="recommend_swiper_img clearfix"> <!--clearfix clear: both实现清除浮动-->
-            <div class="recommend_swiper_item">
-                <img src="img/recommend1.png">
+            <ul id="recommend_carousel_lsit">
+            <li class="recommend_swiper_item">
+                <img src="img/recommend1-recommend1.png">
                 <p>Lorem ipsum dolor sit amet</p>
 
-            </div>
-            <div class="recommend_swiper_item">
-                <img src="img/recommend2.png">
+            </li>
+            <li class="recommend_swiper_item">
+                <img src="img/recommend2-recommend2.png">
                 <p>Lorem ipsum dolor sit amet</p>
 
 
-            </div>
-            <div class="recommend_swiper_item">
-                <img src="img/recommend3.png">
+            </li>
+            <li class="recommend_swiper_item">
+                <img src="img/recommend3-recommend3.png">
                 <p>Lorem ipsum dolor sit amet</p>
+</li>
+<li class="recommend_swiper_item">
+    <img src="img/recommend4-recommend4.png">
+    <p>Lorem ipsum dolor sit amet</p>
+</li>
+<li class="recommend_swiper_item">
+    <img src="img/recommend5-recommend5.png">
+    <p>Lorem ipsum dolor sit amet</p>
+</li>
+<li class="recommend_swiper_item">
+    <img src="img/recommend6-recommend6.png">
+    <p>Lorem ipsum dolor sit amet</p>
 
-            </div>
+            </li>
+            </ul>
 
 
         </div>
         <div class="recommend_btn">
-            <a href="javascript:;" class="prev"></a>
-            <a href="javascript:;" class="next"></a>
+            <a href="javascript:;" class="prev" id="left_btn2"></a>
+            <a href="javascript:;" class="next" id="right_btn2"></a>
         </div>
 
         </div>
@@ -305,7 +349,7 @@
             <h3>Interior Design</h3>
             <div class="footer_detali">
                 <p>Phone: 88888888</p>
-                <p>Website: https://applefishfish.github.io/</p>
+                <p>Website:</p>
                 <p>Email: </p>
             </div>
         </div>
@@ -313,9 +357,9 @@
     <div class="footer_bottom">
         <p>Copyright © 2022</p>
     </div>
-</div>
-</div>
 
+</div>
+<script src="js/carousle.js"></script>
 
     
 </body>
