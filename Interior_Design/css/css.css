@@ -5,7 +5,7 @@
 .top p{
     font-size:18px;
     color:#ffffff;
-    line-height:25px;
+    line-height:45px;
     float:right;
     cursor:default;
 }
@@ -13,6 +13,14 @@
 
 .header {
     padding: 20px 0 10px;
+}
+.logo{
+    font-size:32px;
+    color:#0058AA;
+    width:130px;
+    cursor:pointer;
+
+
 }
 
 .logo,
@@ -46,8 +54,7 @@
 
 .nav_box {
     
-   
-    margin-left: 80px;
+    margin-left: 40px;
 }
 .nav_box ul{
     display: block;
@@ -59,6 +66,7 @@
    
     float: left;
     text-align: center;
+
     margin: 0 30px;
    
 }
@@ -191,15 +199,62 @@
 /*banner*/
 .banner{
     position: relative;
+    width: 100%;
+    overflow:hidden;
+    
 }
-.banner .pagnation{
+.banner .carousel_lsit{
+    width:300%;/* 3 images*/
+    
+}
+.banner .carousel_lsit li{
+    float:left;
+    width:33.3333%;/*1/3*/
+
+}
+.banner .carousel_lsit li img{
+    width:100%;
+    vertical-align:middle;/*白边处理*/
+
+}
+
+.banner_btn>a {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    margin-left:110px;
+    margin-right:110px;
+   
+   
+  
+  
+    
+}
+
+.banner_btn.prev {
+    background: url(../img/prev.png) no-repeat;
+   
+    
+ 
+}
+
+.banner_btn .next {
+    background: url(../img/next.png) no-repeat;
+   
+    
+}
+
+.banner .circles{
     position: absolute;
     width: 60px;
     left: 50%;
     margin-left: -30px;
     bottom: 40px;
+    z-index: 9999;
 }
-.banner .pagnation span{
+.banner .circles li{
     display: block;
     float: left;
     width: 10px;
@@ -207,14 +262,46 @@
     border-radius: 80%;
     background: #fff;
     margin: 0 5px;
+    transition: all .5s ease;
+    
+}
+/* 小点的蓝色背景，是通过类名current设置的，因此用该类名，实现蓝色背景 */
+.banner .circles li.current{
+    background-color:#0058AA;
     
 }
 
-.banner .pagnation span.cur{
-    background:;
+/*product*/
+.product .inner{
+    position:relative;
+}
+.product .swiper_img{
+    width:1155px;
+    height:300px;
+    margin:0 auto;
+}
+.product .swiper_img .product_carousel_lsit{
+   
+    width:20000px;/* 5 images*/
+    overflow:hidden;
+    transition: transform .5s ease 0s;
+     
+
+    
+}
+.product .swiper_img .product_carousel_lsit li{
+    float:left; 
+ 
+   
+
+}
+.product .swiper_img .carousel_lsit li img{
+    width:100%;
+    vertical-align:middle;
+
 }
 
-/*product*/
+
 .swiper_item{
     margin:0 30px;
     float:left;
@@ -231,8 +318,10 @@
 }
 .swiper_item p{
     width:171px;
+    height:35px;
     color:#838383;
     font-size:18px;
+    font-display:center;
 }
 
 .prev {
@@ -276,6 +365,9 @@
     height:1px;
     background:#9B9B9B;
     position:absolute;
+    top:40px;
+
+    
 }
 .text{
     width:155px;
@@ -308,10 +400,11 @@
 
 .aboutus_bottom>div {
     float: left;
-}/*老师，这样写代码是什么意思？*/
+}
 
 .about_left {
     width: 250px;
+    
 }
 .company {
     font-size: 21px;
@@ -340,7 +433,7 @@
 }
 .more:hover{
     animation: txtShadow 1s infinite;
- }/*老师，这样写代码是什么意思？*/
+ }
  
 
 
@@ -357,8 +450,7 @@
         transform:rotate(9deg);
     }
 
-}/*老师，这样写代码是什么意思？@keyframes是什么意思,是一种动画效果吗
-*/
+}
 
 .about_middle {
     width: 630px;
@@ -366,7 +458,7 @@
 .about_middle_img{
     width: 384px;
     height: 256px;
-    overflow: hidden;/*超出*/
+    
     margin:0 auto;
 }
 
@@ -384,7 +476,7 @@
     color: white;
     margin-top: 10px;
     transition: background-color 1s;
-}/*.about_right>a 这是什么意思*/
+}/*.about_right>a 子标签*/
 
 .about_right>a:hover{
     background-color: #0058AA;
@@ -411,7 +503,7 @@
 
 .about_right span:nth-child(2) {
     font-size: 12px;
-}/*span:nth-child(2)什么意思*/
+}
 
 
 
@@ -439,6 +531,10 @@
 .recommend_swiper {
     position: relative;
 }
+#recommend_carousel_lsit{
+    transition: all 1s;
+    width: 20000px;
+}
 
 
 .recommend_swiper_item {
@@ -452,17 +548,37 @@
 
 
 }
+.recommend_swiper_img .recommend_carousel_lsit{
+    width:400%;/* 4 images*/
+    overflow:hidden;
+    transition: transform .5s ease 0s;
+   
+    
+
+}
+.recommend_swiper_img .recommend_carousel_lsit li{
+    float:left;
+    width:25%;/*1/4*/
+
+}
+.recommend_swiper_img .recommend_carousel_lsit li img{
+    width:100%;
+    height: 100%;
+    vertical-align:middle;
+
+}
 .recommend_swiper_item img {
     width: 100%;
     height: 100%;
-}/*老师，这里为什么将图片设置为100%*/
+    vertical-align:middle;
+}
 
 .recommend_swiper_item p {
     width: 325px;
     padding-left: 20px;
     line-height: 45px;
     background: rgba(0, 0, 0, 0.6);
-    position: absolute;/*子绝父相*/
+    position: absolute;
     bottom: 0;
     left: 0;
     color: white;
