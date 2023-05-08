@@ -9,12 +9,16 @@
     <meta name="Keywords" content="M Health">
     
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.theme.default.min.css">
+    
 </head>
 
 <body>
     <!-- top -->
     <header>
-        <!-- logo -->
+    <!-- logo -->
     <div class="header-top">
         <div class="logo">
             <h1>M Health</h1>
@@ -35,8 +39,9 @@
          </div>
         </div>
     </div>
-        <!-- Main Nav -->
-        <nav class="main-nav">
+    <!-- Main Nav -->
+    <nav class="main">
+            
             <ul>
                 <li class="cur"><a href="">Main</a></li>
                 <li><a href="">About</a></li>
@@ -46,11 +51,38 @@
                 <li><a href="">Patient</a></li>
                 <li><a href="">Contact Us</a></li>
                 <li><a href="">Specials</a></li>
+                
             </ul>
-        </nav>
+    </nav>
+    
     </header>
     <!-- banner -->
-    <section class="banner">
+    <div class="ad">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <picture>
+                    <source srcset="images/banner-l.png" media="(min-width:50em)">
+                    <source srcset="images/banner-m.png" media="(min-width:30em)">
+                    <img src="images/banner.png" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="images/banner02-l.png" media="(min-width: 50em)">
+                    <source srcset="images/banner02-m.png" media="(min-width: 30em)">
+                    <img srcset="images/banner02.png" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source srcset="images/banner03-l.png" media="(min-width: 50em)">
+                    <source srcset="images/banner03-m.png" media="(min-width: 30em)">
+                    <img srcset="images/banner03.png" alt="">
+                </picture>
+            </div>
+        </div>
+    </div>
+  <!--<section class="banner">
         <img class="banner-img" src="images/banner.png" alt="">
         <div class="center">
             <h2>live purposefully</h2>
@@ -58,63 +90,64 @@
             <a href="" class="right-btn"></a>
         </div>
       
-        <!-- dot -->
+    
         <ol>
             <li class="cur"></li>
             <li></li>
             <li></li>
             <li></li>
         </ol>
-    </section>
-
-    <!-- content -->
-    <section class="content">
-        <!-- top links-->
-        <div class="useful-links">
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="images/icon_jzxz.png" alt="">
-                        <span>Lorem</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="images/icon_jylc.png" alt="">
-                        <span>Lorem</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="images/icon_zjjs.png" alt="">
-                        <span>Lorem</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="images/icon_ksjs.png" alt="">
-                        <span>Lorem</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="images/icon_ybjy.png" alt="">
-                        <span>Lorem</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="images/icon_jktj.png" alt="">
-                        <span>Lorem</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
+</section>-->
+    <div class="container">
+         <!-- top links-->  
+        <section class="feature">
+        
+        <ul>
+            <li>
+                <a href="">
+                    <img src="images/icon_jzxz.png" alt="">
+                    <span>Lorem</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/icon_jylc.png" alt="">
+                    <span>Lorem</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/icon_zjjs.png" alt="">
+                    <span>Lorem</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/icon_ksjs.png" alt="">
+                    <span>Lorem</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/icon_ybjy.png" alt="">
+                    <span>Lorem</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/icon_jktj.png" alt="">
+                    <span>Lorem</span>
+                </a>
+            </li>
+        </ul>
+        
+        </section>
+        <!-- content -->
+        <section class="content">
         <!-- Intro-->
-        <div class="news-and-notice">
+        <div class="news-and-notice clearfix">
             <!-- news-->
-            <div class="news">
+            <div class="news clearfix">
                 <h3>News</h3>
                 <div class="news-content">
                   
@@ -129,19 +162,24 @@
                     </div>
                     <!-- News List-->
                     <ul>
-                        <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
-                        <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
-                        <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
-                        <li class="spec"><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
-                        <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
-                        <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
-                        <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
-                        <li><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing</a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+                        <li><a href="">Duis aute irure dolor in reprehenderit </a><span>03-30</span></li>
+
+                        
+                        
                     </ul>
                 </div>
             </div>
-            <!-- AD -->
-            <div class="notice">
+         
+            
+            <!--News room-->
+            <div class="notice clearfix">
                 <h3>News room</h3>
                 <ol>
                     <li>
@@ -181,14 +219,18 @@
                     </li>
                 </ol>
             </div>
+            
         </div>
 
         <!-- ad -->
         <aside class="ad-images">
             <a href="">
+                
+                <source srcset="images/xuanchuan-m.png" media="(min-width: 30em)">
                 <img src="images/xuanchuan.png" alt="">
             </a>
         </aside>
+        
 
         <!-- department -->
         <div class="dep-info">
@@ -331,10 +373,9 @@
                 </li>
             </ul>
         </div>
-    </section>
-
-    <!-- footer-->
-    <footer>
+        </section>
+        <!-- footer-->
+        <footer>
         <div class="center">
         <!-- friend-links -->
         <div class="friend-links">
@@ -358,13 +399,17 @@
                 <li>Phone：088-88888888</li>
                 <li>Email：Mhealth@Mhealth.com</li>
                 <li>Zip：666666</li>
-                <li>Website：<a href="">https://applefishfish.github.io</a></li>
+                <li>Website：<a href=""></a></li>
                 
             </ul>
         </address>
         </div>
     
-    </footer>
+        </footer>
+    </div>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.2.1.0/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
