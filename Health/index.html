@@ -23,6 +23,7 @@
         <div class="logo">
             <h1>M Health</h1>
         </div>
+       
 
         <!-- tool -->
         <div class="tool">
@@ -37,10 +38,30 @@
             <button><img src="images/search.png" alt=""></button>
 
          </div>
+        
         </div>
+      
     </div>
     <!-- Main Nav -->
-    <nav class="main">
+    
+    <button type="button" id="header-toggle" class="header-toggle">
+        <span class="header-toggle-bar"></span>
+        <span class="header-toggle-bar"></span>  
+        <span class="header-toggle-bar"></span>          
+    </button>
+    <nav id="nav" class="nav-layout">
+        <ul class="nav-list">
+          <li><a href="javascript:;" class="nav-link">About</a></li>
+            <li><a href="javascript:;" class="nav-link">Appointment</a></li>
+            <li><a href="javascript:;" class="nav-link">Doctors</a></li>
+            <li><a href="javascript:;" class="nav-link">Service</a></li>
+            <li><a href="javascript:;" class="nav-link">Patient</a></li>
+            <li><a href="javascript:;" class="nav-link">Contact Us</a></li>
+            <li><a href="javascript:;" class="nav-link">Specials</a></li>
+                
+        </ul>
+    </nav>
+    
             
             <ul>
                 <li class="cur"><a href="">Main</a></li>
@@ -53,7 +74,8 @@
                 <li><a href="">Specials</a></li>
                 
             </ul>
-    </nav>
+           
+    </nav>-->
     
     </header>
     <!-- banner -->
@@ -392,7 +414,7 @@
         </div>
 
         <!-- contact -->
-        <address>
+        <div class="address">
             <h3>M Health</h3>
             <ul>
                 <li>Address：Lorem ipsum </li>
@@ -402,11 +424,30 @@
                 <li>Website：<a href=""></a></li>
                 
             </ul>
-        </address>
         </div>
+        </div>
+        
     
         </footer>
     </div>
+    <script>
+       {
+        const $toggleBtn = document.getElementById('header-toggle');
+        const $nav = document.getElementById('nav');
+        const navExtendedClassName = 'nav-layout-extended';
+        const toggleBtnExtendedClassName = 'header-toggle-active';
+
+        $toggleBtn.addEventListener(
+          'click',
+          function () {
+            this.classList.toggle(toggleBtnExtendedClassName);
+            $nav.classList.toggle(navExtendedClassName);
+          },
+          false
+        );
+      }
+
+    </script>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/owl.carousel.2.1.0/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
