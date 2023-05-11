@@ -9,6 +9,8 @@
     
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css">
 
     <title>Interior Design</title>
 </head>
@@ -16,7 +18,7 @@
      <!--header-->
      <div class="wrapper">
         <div class="top">
-            <div class="inner clearfix">
+            <div class="service clearfix">
                 <p>Service Line: 1-800-123-4567</p>
             </div>
         </div>
@@ -27,32 +29,41 @@
              <!--logo-->
              <div class="logo">Interior Design</div>
              <!--nav-->
-             <div class="nav_box">
             
-                <ul>
+             <div class="nav_box">
+                <nav id="nav" class="nav-layout">
+                    <ul class="nav-list">
                  
-                    <li><a href="javascript:;" class="nav_icon index_icon"></a>
-                        <a href="javascript:;">Home</a>
-                    </li>
-                    <li><a href="javascript:;" class="nav_icon index_aboutus"></a>
-                        <a href="javascript:;">About Us</a>
-                    </li>
-                    <li><a href="javascript:;" class="nav_icon server_icon"></a>
-                        <a href="javascript:;">Service</a>
-                    </li>
-                    <li><a href="javascript:;" class="nav_icon pro_icon"></a>
-                        <a href="javascript:;">Product</a>
-                    </li>
-                    <li><a href="javascript:;" class="nav_icon tel_icon"></a>
-                        <a href="javascript:;">Contect Us</a>
-                    </li>
-                </ul>
+                        <li><a href="javascript:;" class="nav_icon index_icon"></a>
+                            <a href="javascript:;">Home</a>
+                        </li>
+                        <li><a href="javascript:;" class="nav_icon index_aboutus"></a>
+                            <a href="javascript:;">About Us</a>
+                        </li>
+                        <li><a href="javascript:;" class="nav_icon server_icon"></a>
+                            <a href="javascript:;">Service</a>
+                        </li>
+                        <li><a href="javascript:;" class="nav_icon pro_icon"></a>
+                            <a href="javascript:;">Product</a>
+                        </li>
+                        <li><a href="javascript:;" class="nav_icon tel_icon"></a>
+                            <a href="javascript:;">Contect Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                
              </div>
              <!--search-->
             <div class="search_box">
                 <input type="text" placeholder="search">
                 <a href="javascript:;" class="iconfont"></a>
             </div>
+            <button type="button" id="header-toggle" class="header-toggle">
+                <span class="header-toggle-bar"></span>
+                <span class="header-toggle-bar"></span>
+                <span class="header-toggle-bar"></span>
+            </button>
+            
            
         </div>
        
@@ -233,7 +244,7 @@
         </div>
     
         <div class="recommend_swiper">
-        <div class="recommend_swiper_img clearfix"> <!--clearfix clear: both实现清除浮动-->
+        <div class="recommend_swiper_img clearfix">
             <ul id="recommend_carousel_lsit">
             <li class="recommend_swiper_item">
                 <img src="img/recommend1-recommend1.png">
@@ -340,7 +351,7 @@
 
    </section>
 
-    <!--footer-->
+
 
   <!-- footer -->
   <div class="footer">
@@ -349,8 +360,8 @@
             <h3>Interior Design</h3>
             <div class="footer_detali">
                 <p>Phone: 88888888</p>
-                <p>Website: https://applefishfish.github.io/</p>
-                <p>Email: apple3186@hotmail.com</p>
+                <p>Website: </p>
+                <p>Email: </p>
             </div>
         </div>
     </div>
@@ -359,6 +370,24 @@
     </div>
 
 </div>
+<script>
+    {
+     const $toggleBtn = document.getElementById('header-toggle');
+     const $nav = document.getElementById('nav');
+     const navExtendedClassName = 'nav-layout-extended';
+     const toggleBtnExtendedClassName = 'header-toggle-active';
+
+     $toggleBtn.addEventListener(
+       'click',
+       function () {
+         this.classList.toggle(toggleBtnExtendedClassName);
+         $nav.classList.toggle(navExtendedClassName);
+       },
+       false
+     );
+   }
+
+ </script>
 <script src="js/carousle.js"></script>
 
     
