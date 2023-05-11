@@ -65,6 +65,10 @@ header{
     width:100%;
 
 }
+.header-toggle{
+    display: none;
+
+}
 header .header-top{
     width:1200px;
     margin:0 auto;
