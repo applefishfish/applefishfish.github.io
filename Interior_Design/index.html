@@ -1,395 +1,599 @@
-
-<!--backup-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.top{
+    width:100%;
+    background-color:#0058AA;
+}
+.top .service{
     
-    <link rel="stylesheet" href="css/css.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/reset.css">
+   width:1300px;
+   
+}
+.top p{
+    font-size:18px;
+    color:#ffffff;
+    line-height:45px;
+    float:right;
+    cursor:default;
+}
+/*nav*/
+.header {
+    width:100%;
+    padding: 20px 0 10px;
+}
+.logo{
+    font-size:32px;
+    color:#0058AA;
+    width:130px;
+    cursor:pointer;
+}
 
-    <title>Interior Design</title>
-</head>
-<body>
-     <!--header-->
-     <div class="wrapper">
-        <div class="top">
-            <div class="service clearfix">
-                <p>Service Line: 1-800-123-4567</p>
-            </div>
-        </div>
-     </div>
-     <!--header-->
-    <header class="header">
-        <div class="inner clearfix">
-             <!--logo-->
-             <div class="logo">Interior Design</div>
-             <!--nav-->
-            
-             <div class="nav_box">
-                <nav id="nav" class="nav-layout">
-                    <ul class="nav-list">
-                 
-                        <li><a href="javascript:;" class="nav_icon index_icon"></a>
-                            <a href="javascript:;">Home</a>
-                        </li>
-                        <li><a href="javascript:;" class="nav_icon index_aboutus"></a>
-                            <a href="javascript:;">About Us</a>
-                        </li>
-                        <li><a href="javascript:;" class="nav_icon server_icon"></a>
-                            <a href="javascript:;">Service</a>
-                        </li>
-                        <li><a href="javascript:;" class="nav_icon pro_icon"></a>
-                            <a href="javascript:;">Product</a>
-                        </li>
-                        <li><a href="javascript:;" class="nav_icon tel_icon"></a>
-                            <a href="javascript:;">Contect Us</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-             </div>
-             <!--search-->
-            <div class="search_box">
-                <input type="text" placeholder="search">
-                <a href="javascript:;" class="iconfont"></a>
-            </div>
-            <button type="button" id="header-toggle" class="header-toggle">
-                <span class="header-toggle-bar"></span>
-                <span class="header-toggle-bar"></span>
-                <span class="header-toggle-bar"></span>
-            </button>
-            
-           
-        </div>
-       
-    </header>
+.logo,
+.nav_box {
+    float: left;
+}
+.search_box {
+    margin-top:30px;
+    float:right;
+}
+.search_box input {
+    float: left;
+    width: 215px;
+    height: 35px;
+    padding-left: 10px;
+}
+.search_box a {
+    width: 48px;
+    height: 39px;
+    float: left;
+    background: #0058AA url(../img/search.png) center center no-repeat;
+}
+.logo a {
+    font-size: 64px;
+    color: #0058AA;
+}
+
+.header-toggle{
+    display: none;
+
+}
+
+.nav_box {
+    margin-left: 40px;
+    position: relative;
+}
+.nav_box ul{
+    display: block;
+    float:left;
+}
+.nav_box ul li {
+    float: left;
+    text-align: center;
+    margin: 0 30px;
+}
+.nav_box ul li a {
+    color: #545454;
+    text-align: center;
+}
+.nav_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px auto;
+}
+
+.index_icon{
+    background:url(../img/home-gry.png)center center no-repeat;
+}
+
+.index_icon:hover {
+    background: url(../img/home-white.png) center center no-repeat;
+}
+
+.index_aboutus {
+    background: url(../img/abouts-gry.png) center center no-repeat;
+}
+.index_aboutus:hover {
+    background: url(../img/abouts-white.png) center center no-repeat;
+}
+.server_icon {
+    background: url(../img/kefu-gry.png) center center no-repeat;
+}
+.server_icon:hover {
+    background: url(../img/kefu-white.png) center center no-repeat;
+}
+.pro_icon {
+    background: url(../img/chanpin-gry.png) center center no-repeat;
+}
+.pro_icon:hover {
+    background: url(../img/chanpin-white.png) center center no-repeat;
+}
+.tel_icon {
+    background: url(../img/fuwu-gry.png) center center no-repeat;
+}
+.tel_icon:hover {
+    background: url(../img/fuwu-white.png) center center no-repeat;
+}
+.nav_icon:hover {
+    background-color: #0058AA;
+    animation: pulse 1s infinite;
+}
+/*  animation */
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.site-head{
+    min-width: 1152px;
+    height:150px;
+}
+.site-head .topbar{
+    height:100px;
+    background-color: #4389c4;
+    color: white;
+    line-height:32px;
+}
+.site-head .topbar a{
+    color: white;
+}
+.site-head .topbar .shortcut-links{
+    float: left;
+}
+.site-head .topbar .shortcut-links ul{
+    list-style-type:none;
+}
+/* li is under shortcut-link and under ul*/
+.site-head .topbar .shortcut-links > ul > li{
+    float: left;
+    margin-right:30px;
+    font-size: 18px;
+}
+.site-head .header-con{
+    height: 36px;
+    padding:25px 0;
+    float: right;
+}
+.banner img{
+    width: 100%;
+   /*limited the minima banner size*/ 
+
+   
+    vertical-align: middle;
+}
+/*banner*/
+.banner{
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+}
+.banner .carousel_lsit{
+    /* 3 images*/
+    width:300%;
+    /* overflow:hidden; */
+    /* transition: transform .5s ease 0s; */
+}
+.banner .carousel_lsit li{
+    float:left;
+    width:33.3333%;
+}
+.banner .carousel_lsit li img{
+    width:100%;
+    vertical-align:middle;/*white*/
+}
+.banner_btn>a {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    margin-left:110px;
+    margin-right:110px;
+}
+.banner_btn.prev {
+    background: url(../img/prev.png) no-repeat;
+}
+.banner_btn .next {
+    background: url(../img/next.png) no-repeat;
+}
+.banner .circles{
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 40px;
+    z-index: 9999;
+}
+.banner .circles li{
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 80%;
+    background: #fff;
+    margin: 0 5px;
+    transition: all .5s ease;
+}
+
+/* .banner .circles li:nth-child(1){ */
+.banner .circles li.current{
+    background-color:#0058AA;
+}
+/*product*/
+.product{
+    width:100%;
+}
+.product .inner{
+   
+    position:relative;
+}
+.product .swiper_img{
+    width:1155px;
+    height:300px;
+    margin:0 auto;
+}
+.product .swiper_img .product_carousel_lsit{
+   
+    /* width:500%; */
+    width:20000px;
+    overflow:hidden;
+    transition: transform .5s ease 0s;
+}
+.product .swiper_img .product_carousel_lsit li{
+    float:left; 
+}
+.product .swiper_img .carousel_lsit li img{
+    width:100%;
+    vertical-align:middle;
+}
+.swiper_item{
+    margin:0 30px;
+    float:left;
+    margin-top:30px;
+    box-shadow: 10px 10px 16px 0 rgba(0,0,0,0.20);
+}
+.swiper_item img{
+    width:171px;
+    height:171px;
+    margin-bottom:10px;
+}
+.swiper_item p{
+    width:171px;
+    height:35px;
+    color:#838383;
+    font-size:18px;
+    font-display:center;
+}
+.prev {
+    position: absolute;
+    left: -30px;
+    top: 85px;
+    background: url(../img/prev.png) no-repeat;
+}
+.next {
+    position: absolute;
+    right: -30px;
+    top: 85px;
+    background: url(../img/next.png) no-repeat;
+}
+.swiper_btn>a{
+    width: 48px;
+    height: 48px;
+}
+.prev:hover,.prev:hover{
+    background: url(../img/prev_active.png) no-repeat !important;
+}
+.next:hover{
+    background: url(../img/next_active.png) no-repeat !important;
+}
+/*about-us*/
+.aboutus{
+    width:1155px;
+    margin:30px auto 50px;
+}
+.title{
+    height:70px;
+    margin:20px 0;
+    position:relative;
+}
+.line{
+    width:100%;
+    height:1px;
+    background:#9B9B9B;
+    position:absolute;
+    top:40px;
+}
+.text{
+    width:155px;
+    background-color:white;
+    position:absolute;
+    top: 0;
+    left:50%;
+    margin-left:-77.5px;
+    text-align:center;
+}
+.text h3 {
+    font-size: 32px;
+    color: #696868;
+    font-weight: normal;
+}
+.text p {
+    font-size: 18px;
+    color: #9B9B9B;
+}
+.title_line {
+    width: 93px;
+    height: 3px;
+    background: #0058AA;
+    display: inline-block;
+}
+.aboutus_bottom{
+    margin-top: 30px;
+}
+.aboutus_bottom>div {
+    float: left;
+}
+.about_left {
+    width: 250px;
+}
+.company {
+    font-size: 21px;
+    color: #5A5A5A;
+    margin: 10px 0;
+}
+.about_line {
+    background: #0058AA;
+    height: 4px;
+    width: 105px;
+}
+.intro {
+    font-size: 18px;
+    color: #7B7C7C;
+    line-height: 26px;
+    margin: 20px 0;
+}
+.more {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 38px;
+    width: 130px;
+    background: #0058AA;
+    text-align: center;
+}
+.more:hover{
+    animation: txtShadow 1s infinite;
+ }
+ @keyframes txtShadow {
+    0% {
+        transform:rotate(9deg);
+    }
+    50% {
+        transform:rotate(-9deg);
+    }
+    100%{
+        transform:rotate(9deg);
+    }
+}
+.about_middle {
+    width: 630px;
+}
+.about_middle_img{
+    width: 384px;
+    height: 256px;
+    margin:0 auto;
+}
+.about_middle img {
+    width: 384px;
+    transition: transform 1s;
+}
+.about_middle img:hover{
+    transform: scale(1.2);
+}
+.about_right>a {
+    width: 183px;
+    padding: 8px 0 8px 90px;
+    color: white;
+    margin-top: 10px;
+    transition: background-color 1s;
+}
+.about_right>a:hover{
+    background-color: #0058AA;
+}
+.online {
+    background: #CCCCCC url(../img/liuyan.png) 30px center no-repeat;
+}
+.advertising {
+    background: #CCCCCC url(../img/guanggao.png) 30px center no-repeat;
+}
+.network {
+    background: #CCCCCC url(../img/wangluo.png) 30px center no-repeat;
+}
+.about_right>a span {
+    display: block;
+}/a span*/
+.about_right span:first-child {
+    font-size: 22px;
+}/*first-child*/
+.about_right span:nth-child(2) {
+    font-size: 12px;
+}
+/*recommend*/
+.recommend{
+    background-color: #f7f7f7;
     
-    <!--banner-->
-    <section class="banner" id="banner">
-        <ul id="carousel_lsit" class="carousel_lsit">
-            <li>
-                <img src="img/banner01.jpg" alt="">
-            </li>
-            <li>
-                <img src="img/banner02.jpg" alt="">
-            </li>
-            <li>
-                <img src="img/banner03.jpg" alt="">
-            </li>
-        </ul>
-        <div class="banner_btn">
-            <a href="javascript:;" id="right_btn" class="next"></a>
-            <a href="javascript:;" id="left_btn" class="prev"></a>
-        </div>
-        <ol class="circles" id="circle_ol">
-           
-            <li data-n="0" class="current"></li>
-            <li data-n="1" class=""></li>
-            <li data-n="2" class=""></li>
-
-         
-        </ol>  
-        <nav class="banner-nav">
-            <ul>
-                <li>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt></dt>
-                        <dd></dd>
-                    </dl>
-                </li>
-            </ul>
-        </nav>
-        
-       <script src="js/carousle.js"></script>
-    </section>
-    <!--product-->
-    <section class="product">
-       
-        <div class="inner">
-            <div class="swiper_img clearfix">
-                <ul id="product_carousel_lsit" class="product_carousel_lsit">
-                <li class="swiper_item">
-                    <img src="img/product01-product01.png" alt="">
-                    <p>Lorem ipsum dolor sit</p>
-
-                </li>
-                <li class="swiper_item">
-                    <img src="img/product02-product02.png" alt="">
-                    <p>Lorem ipsum dolor sit</p>
-
-                </li>
-                <li class="swiper_item">
-                    <img src="img/product03-product03.png" alt="">
-                    <p>Lorem ipsum dolor sit</p>
-
-                </li>
-                <li class="swiper_item">
-                    <img src="img/product04-product04.png" alt="">
-                    <p>Lorem ipsum dolor sit</p>
-
-                </li>
-                <li class="swiper_item">
-                    <img src="img/product05-product05.png" alt="">
-                    <p>Lorem ipsum dolor sit</p>
-                    </li>
-                    <li class="swiper_item">
-                        <img src="img/product06-product06.png" alt="">
-                        <p>Lorem ipsum dolor sit</p>
-                        </li>
-                        <li class="swiper_item">
-                            <img src="img/product07-product07.png" alt="">
-                            <p>Lorem ipsum dolor sit</p>
-                            </li>
-                            <li class="swiper_item">
-                                <img src="img/product08-product08.png" alt="">
-                                <p>Lorem ipsum dolor sit</p>
-                                </li>
-                               
-                </li>
-            </ul>   
-
-            </div>
-            <div class="swiper_btn">
-                <a href="javascript:;" id="right_btn1" class="next"></a>
-                <a href="javascript:;" id="left_btn1" class="prev"></a>
-            </div>
-
-        </div>
-    </section>
- 
-    <!--about us-->
-    <section class="aboutus">
-        <div class="title">
-            <div class="line"></div>
-            <div class="text">
-                <h3>About Us</h3>
-                <div class="title_line"></div>
-            </div>
-        </div>
-
-        <div class="aboutus_bottom clearfix">
-            <div class="about_left">
-                
-                <p class="company">Company</p>
-                <div class="about_line"></div>
-                <p class="intro">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
-                <a href="javascript:;" class="more">Learn More</a>
-            </div>
-            <div class="about_middle">
-                <div class="about_middle_img"><img src="img/aboutus.png" alt=""></div>
-            </div>
-            <div class="about_right">
-                <a href="javascript:;" class="online">
-                    <span>Message</span>
-                    <span>on-line message</span>
-                </a>  
-                <a href="javascript:;" class="advertising">
-                    <span>Advertising</span>
-                    <span>Advertising management</span>
-                </a>  
-                <a href="javascript:;" class="network">
-                    <span>Network</span>
-                    <span>Network consultation</span>
-                </a>  
-
-               
-            </div>
-        </div>
-    </section>
-
- <!--recommendation-->
- <section class="recommend">
-    <div class="recommend_inner">
-    
-        <div class="title">
-            <div class="text">
-                <h3>Recommendation</h3>
-                <div class="title_line"></div>
-            </div>
-        </div>
-    
-        <div class="recommend_swiper">
-        <div class="recommend_swiper_img clearfix">
-            <ul id="recommend_carousel_lsit">
-            <li class="recommend_swiper_item">
-                <img src="img/recommend1-recommend1.png">
-                <p>Lorem ipsum dolor sit amet</p>
-
-            </li>
-            <li class="recommend_swiper_item">
-                <img src="img/recommend2-recommend2.png">
-                <p>Lorem ipsum dolor sit amet</p>
+    padding-top:50px;
+}
+.recommend .title{
+    height:85px;
+}
+.recommend .text{
+    background: transparent;
+    width: auto;
+    margin-left: -115px;
+}
+.recommend_inner {
+    width: 1155px;
+    margin: 0 auto;
+}
+.recommend_swiper {
+    position: relative;
+}
+#recommend_carousel_lsit{
+    transition: all 1s;
+    width: 20000px;
+}
 
 
-            </li>
-            <li class="recommend_swiper_item">
-                <img src="img/recommend3-recommend3.png">
-                <p>Lorem ipsum dolor sit amet</p>
-</li>
-<li class="recommend_swiper_item">
-    <img src="img/recommend4-recommend4.png">
-    <p>Lorem ipsum dolor sit amet</p>
-</li>
-<li class="recommend_swiper_item">
-    <img src="img/recommend5-recommend5.png">
-    <p>Lorem ipsum dolor sit amet</p>
-</li>
-<li class="recommend_swiper_item">
-    <img src="img/recommend6-recommend6.png">
-    <p>Lorem ipsum dolor sit amet</p>
+.recommend_swiper_item {
+    width: 345px;
+    height: 326px;
+    float: left;
+    margin:20px;
+    position: relative;
+}
+.recommend_swiper_img .recommend_carousel_lsit{
+    width:400%;/* 4 images*/
+    overflow:hidden;
+    transition: transform .5s ease 0s;
+}
+.recommend_swiper_img .recommend_carousel_lsit li{
+    float:left;
+    width:25%;/*1/4*/
+}
+.recommend_swiper_img .recommend_carousel_lsit li img{
+    width:100%;
+    height: 100%;
+    vertical-align:middle;
+}
+.recommend_swiper_item img {
+    width: 100%;
+    height: 100%;
+    vertical-align:middle;
+}
+.recommend_swiper_item p {
+    width: 325px;
+    padding-left: 20px;
+    line-height: 45px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+.recommend_btn>a {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+}
+.recommend_btn .prev {
+    background: url(../img/prev.png) no-repeat;
+    left: -50px;
+}
+.recommend_btn .next {
+    background: url(../img/next.png) no-repeat;
+    right: -50px;
+}
 
-            </li>
-            </ul>
+/*news*/
+.news {
+    width: 1155px;
+    margin: 0 auto;
+}
+.news_detail{
+    margin: 30px 0 50px 0;
+}
+.news_item {
+    width: 50%;
+    float: left;
+    margin-top: 40px;
+}
+.news_item>div {
+    float: left;
+}
+.news_item_left {
+    width: 82px;
+    height: 82px;
+    position: relative;
+}
+.news_item_left:hover{
+    animation: circle 1s;
+}
+@keyframes circle {
+    0%{
+        top: -20px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.news_item_left span {
+    font-size: 40px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -28px;
+    margin-left: -23px;
+}
+.news_item_left img {
+    width: 100%;
+    height: 100%;
+}
+.news_item_right {
+    width: 400px;
+    margin-left: 20px;
+}
+.news_item_right h4 {
+    font-size: 21px;
+    color: #4A4A4A;
+    font-weight: normal;
+}
+.news_item_right p {
+    font-size: 18px;
+    color: #807E7E;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.footer{
+    width: 100%;
+    margin: 0 auto;
+}
 
 
-        </div>
-        <div class="recommend_btn">
-            <a href="javascript:;" class="prev" id="left_btn2"></a>
-            <a href="javascript:;" class="next" id="right_btn2"></a>
-        </div>
+.footer_top{
+   
+    margin: 0 auto;
+    background: #06142F;
+}
+.footer_bottom{
+    background: #202C46;
+}
+.footer_inner{
+    width: 1150px;
+    margin:0 auto;
+    color: white;
+}
+.footer_inner h3,.footer_detali{
+    float: left;
+}
+.footer_inner h3{
+    font-size: 48px;
+    line-height: 210px;
+}
+.footer_detali{
+    margin: 55px 0 0 100px;
+    line-height: 40px;
+}
+.footer_bottom p{
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
 
-        </div>
-
-    
-
-    </div>
- </section>
-
-    
-    <!--news-->
-   <section class="news">
-    <div class="title">
-        <div class="line"></div>
-        <div class="text">
-            <h3>news</h3>
-            <p>News Center</p>
-            <div class="title_line"></div>
-            
-        </div>
-    </div>
-    <div class="news_detail clearfix">
-        <div class="news_item">
-            <div class="news_item_left">
-                <span>01</span>
-                <img src="img/talk-bg.png">
-            </div>
-            <div class="news_item_right">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="news_item_left">
-                <span>02</span>
-                <img src="img/talk-bg.png">
-            </div>
-            <div class="news_item_right">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="news_item_left">
-                <span>03</span>
-                <img src="img/talk-bg.png">
-            </div>
-            <div class="news_item_right">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="news_item_left">
-                <span>04</span>
-                <img src="img/talk-bg.png">
-            </div>
-            <div class="news_item_right">
-                <h4>Lorem Ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-
-            </div>
-        </div>
-    </div>
-
-   </section>
-
-
-
-  <!-- footer -->
-  <div class="footer">
-    <div class="footer_top clearfix">
-        <div class="footer_inner">
-            <h3>Interior Design</h3>
-            <div class="footer_detali">
-                <p>Phone: 88888888</p>
-                <p>Website: </p>
-                <p>Email: </p>
-            </div>
-        </div>
-    </div>
-    <div class="footer_bottom">
-        <p>Copyright © 2023</p>
-    </div>
-
-</div>
-<script>
-    {
-     const $toggleBtn = document.getElementById('header-toggle');
-     const $nav = document.getElementById('nav');
-     const navExtendedClassName = 'nav-layout-extended';
-     const toggleBtnExtendedClassName = 'header-toggle-active';
-
-     $toggleBtn.addEventListener(
-       'click',
-       function () {
-         this.classList.toggle(toggleBtnExtendedClassName);
-         $nav.classList.toggle(navExtendedClassName);
-       },
-       false
-     );
-   }
-
- </script>
-<script src="js/carousle.js"></script>
-
-    
-</body>
-</html>
