@@ -25,6 +25,7 @@
     width:130px;
     cursor:pointer;
 }
+
 .logo,
 .nav_box {
     float: left;
@@ -49,6 +50,12 @@
     font-size: 64px;
     color: #0058AA;
 }
+
+.header-toggle{
+    display: none;
+
+}
+
 .nav_box {
     margin-left: 40px;
     position: relative;
