@@ -84,3 +84,25 @@ body {
 .tac {
     text-align: center;
 }
+
+/*tool*/
+.hide{
+    display:none !important;
+}
+.ivvisible{
+    visibility:hidden;
+}
+.clearfix{
+    overflow:hidden;
+
+}
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display: block;
+    clear:both;
+    overflow: hidden;
+    
+}
+
+
