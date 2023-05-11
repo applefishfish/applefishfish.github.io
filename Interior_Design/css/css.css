@@ -1,6 +1,11 @@
 .top{
-    height:45px;
+    width:100%;
     background-color:#0058AA;
+}
+.top .service{
+    
+   width:1300px;
+   
 }
 .top p{
     font-size:18px;
@@ -10,8 +15,8 @@
     cursor:default;
 }
 /*nav*/
-
 .header {
+    width:100%;
     padding: 20px 0 10px;
 }
 .logo{
@@ -19,15 +24,11 @@
     color:#0058AA;
     width:130px;
     cursor:pointer;
-
-
 }
-
 .logo,
 .nav_box {
     float: left;
 }
-
 .search_box {
     margin-top:30px;
     float:right;
@@ -44,39 +45,27 @@
     float: left;
     background: #0058AA url(../img/search.png) center center no-repeat;
 }
-
-
-
 .logo a {
     font-size: 64px;
     color: #0058AA;
 }
-
 .nav_box {
-    
     margin-left: 40px;
+    position: relative;
 }
 .nav_box ul{
     display: block;
     float:left;
 }
-
 .nav_box ul li {
-  
-   
     float: left;
     text-align: center;
-
     margin: 0 30px;
-   
 }
-
 .nav_box ul li a {
     color: #545454;
     text-align: center;
-
 }
-
 .nav_icon {
     width: 50px;
     height: 50px;
@@ -84,57 +73,43 @@
     margin: 10px auto;
 }
 
-
-
-/*icon image*/
 .index_icon{
     background:url(../img/home-gry.png)center center no-repeat;
 }
-/* 鼠标移入时，切换图片 */
+
 .index_icon:hover {
     background: url(../img/home-white.png) center center no-repeat;
 }
 
-
-/* 其余图标是一样的 */
 .index_aboutus {
     background: url(../img/abouts-gry.png) center center no-repeat;
 }
-
 .index_aboutus:hover {
     background: url(../img/abouts-white.png) center center no-repeat;
 }
-
 .server_icon {
     background: url(../img/kefu-gry.png) center center no-repeat;
 }
-
 .server_icon:hover {
     background: url(../img/kefu-white.png) center center no-repeat;
 }
-
 .pro_icon {
     background: url(../img/chanpin-gry.png) center center no-repeat;
 }
-
 .pro_icon:hover {
     background: url(../img/chanpin-white.png) center center no-repeat;
 }
-
 .tel_icon {
     background: url(../img/fuwu-gry.png) center center no-repeat;
 }
-
 .tel_icon:hover {
     background: url(../img/fuwu-white.png) center center no-repeat;
 }
-
 .nav_icon:hover {
     background-color: #0058AA;
     animation: pulse 1s infinite;
 }
-
-/*  动画效果 */
+/*  animation */
 @keyframes pulse {
   0% {
     transform: scale3d(1, 1, 1);
@@ -146,8 +121,6 @@
     transform: scale3d(1, 1, 1);
   }
 }
-
-
 .site-head{
     min-width: 1152px;
     height:150px;
@@ -158,66 +131,53 @@
     color: white;
     line-height:32px;
 }
-
 .site-head .topbar a{
     color: white;
-
 }
 .site-head .topbar .shortcut-links{
     float: left;
-
 }
 .site-head .topbar .shortcut-links ul{
     list-style-type:none;
-   
-
-
 }
 /* li is under shortcut-link and under ul*/
 .site-head .topbar .shortcut-links > ul > li{
     float: left;
     margin-right:30px;
     font-size: 18px;
-    
-
 }
 .site-head .header-con{
     height: 36px;
     padding:25px 0;
     float: right;
-
 }
-
 .banner img{
     width: 100%;
    /*limited the minima banner size*/ 
-    min-width: 1152px;
-    /*垂直居中，图片不会产生缝隙*/
-    vertical-align: middle;
 
+   
+    vertical-align: middle;
 }
 /*banner*/
 .banner{
     position: relative;
     width: 100%;
     overflow:hidden;
-    
 }
 .banner .carousel_lsit{
-    width:300%;/* 3 images*/
-    
+    /* 3 images*/
+    width:300%;
+    /* overflow:hidden; */
+    /* transition: transform .5s ease 0s; */
 }
 .banner .carousel_lsit li{
     float:left;
-    width:33.3333%;/*1/3*/
-
+    width:33.3333%;
 }
 .banner .carousel_lsit li img{
     width:100%;
-    vertical-align:middle;/*白边处理*/
-
+    vertical-align:middle;/*white*/
 }
-
 .banner_btn>a {
     width: 48px;
     height: 48px;
@@ -226,26 +186,13 @@
     margin-top: -24px;
     margin-left:110px;
     margin-right:110px;
-   
-   
-  
-  
-    
 }
-
 .banner_btn.prev {
     background: url(../img/prev.png) no-repeat;
-   
-    
- 
 }
-
 .banner_btn .next {
     background: url(../img/next.png) no-repeat;
-   
-    
 }
-
 .banner .circles{
     position: absolute;
     width: 60px;
@@ -263,16 +210,18 @@
     background: #fff;
     margin: 0 5px;
     transition: all .5s ease;
-    
-}
-/* 小点的蓝色背景，是通过类名current设置的，因此用该类名，实现蓝色背景 */
-.banner .circles li.current{
-    background-color:#0058AA;
-    
 }
 
+/* .banner .circles li:nth-child(1){ */
+.banner .circles li.current{
+    background-color:#0058AA;
+}
 /*product*/
+.product{
+    width:100%;
+}
 .product .inner{
+   
     position:relative;
 }
 .product .swiper_img{
@@ -282,39 +231,28 @@
 }
 .product .swiper_img .product_carousel_lsit{
    
-    width:20000px;/* 5 images*/
+    /* width:500%; */
+    width:20000px;
     overflow:hidden;
     transition: transform .5s ease 0s;
-     
-
-    
 }
 .product .swiper_img .product_carousel_lsit li{
     float:left; 
- 
-   
-
 }
 .product .swiper_img .carousel_lsit li img{
     width:100%;
     vertical-align:middle;
-
 }
-
-
 .swiper_item{
     margin:0 30px;
     float:left;
     margin-top:30px;
     box-shadow: 10px 10px 16px 0 rgba(0,0,0,0.20);
-  
-
 }
 .swiper_item img{
     width:171px;
     height:171px;
     margin-bottom:10px;
-
 }
 .swiper_item p{
     width:171px;
@@ -323,7 +261,6 @@
     font-size:18px;
     font-display:center;
 }
-
 .prev {
     position: absolute;
     left: -30px;
@@ -343,22 +280,18 @@
 .prev:hover,.prev:hover{
     background: url(../img/prev_active.png) no-repeat !important;
 }
-
 .next:hover{
     background: url(../img/next_active.png) no-repeat !important;
 }
-
-/*aboutus*/
+/*about-us*/
 .aboutus{
     width:1155px;
     margin:30px auto 50px;
-    
 }
 .title{
     height:70px;
     margin:20px 0;
     position:relative;
-
 }
 .line{
     width:100%;
@@ -366,8 +299,6 @@
     background:#9B9B9B;
     position:absolute;
     top:40px;
-
-    
 }
 .text{
     width:155px;
@@ -377,7 +308,6 @@
     left:50%;
     margin-left:-77.5px;
     text-align:center;
-
 }
 .text h3 {
     font-size: 32px;
@@ -397,14 +327,11 @@
 .aboutus_bottom{
     margin-top: 30px;
 }
-
 .aboutus_bottom>div {
     float: left;
 }
-
 .about_left {
     width: 250px;
-    
 }
 .company {
     font-size: 21px;
@@ -429,104 +356,81 @@
     width: 130px;
     background: #0058AA;
     text-align: center;
-
 }
 .more:hover{
     animation: txtShadow 1s infinite;
  }
- 
-
-
  @keyframes txtShadow {
     0% {
         transform:rotate(9deg);
-         
     }
     50% {
         transform:rotate(-9deg);
-
     }
     100%{
         transform:rotate(9deg);
     }
-
 }
-
 .about_middle {
     width: 630px;
 }
 .about_middle_img{
     width: 384px;
     height: 256px;
-    
     margin:0 auto;
 }
-
 .about_middle img {
     width: 384px;
-    transition: transform 1s;/*过度*/
+    transition: transform 1s;
 }
 .about_middle img:hover{
-    transform: scale(1.2);/*transition过渡一般是固定的平移，旋转，缩放scale*/
+    transform: scale(1.2);
 }
-
 .about_right>a {
     width: 183px;
     padding: 8px 0 8px 90px;
     color: white;
     margin-top: 10px;
     transition: background-color 1s;
-}/*.about_right>a 子标签*/
-
+}
 .about_right>a:hover{
     background-color: #0058AA;
 }
 .online {
     background: #CCCCCC url(../img/liuyan.png) 30px center no-repeat;
 }
-
 .advertising {
     background: #CCCCCC url(../img/guanggao.png) 30px center no-repeat;
 }
-
 .network {
     background: #CCCCCC url(../img/wangluo.png) 30px center no-repeat;
 }
-
 .about_right>a span {
     display: block;
-}/*子选择器.about_right下的子标签a span*/
-
+}/a span*/
 .about_right span:first-child {
     font-size: 22px;
-}/*first-child序号选择器*/
-
+}/*first-child*/
 .about_right span:nth-child(2) {
     font-size: 12px;
 }
-
-
-
 /*recommend*/
 .recommend{
     background-color: #f7f7f7;
+    
     padding-top:50px;
-
 }
 .recommend .title{
     height:85px;
-
 }
 .recommend .text{
     background: transparent;
     width: auto;
     margin-left: -115px;
-  
 }
 .recommend_inner {
     width: 1155px;
     margin: 0 auto;
-   
 }
 .recommend_swiper {
     position: relative;
@@ -540,39 +444,29 @@
 .recommend_swiper_item {
     width: 345px;
     height: 326px;
-   
     float: left;
     margin:20px;
     position: relative;
- 
-
-
 }
 .recommend_swiper_img .recommend_carousel_lsit{
     width:400%;/* 4 images*/
     overflow:hidden;
     transition: transform .5s ease 0s;
-   
-    
-
 }
 .recommend_swiper_img .recommend_carousel_lsit li{
     float:left;
     width:25%;/*1/4*/
-
 }
 .recommend_swiper_img .recommend_carousel_lsit li img{
     width:100%;
     height: 100%;
     vertical-align:middle;
-
 }
 .recommend_swiper_item img {
     width: 100%;
     height: 100%;
     vertical-align:middle;
 }
-
 .recommend_swiper_item p {
     width: 325px;
     padding-left: 20px;
@@ -583,7 +477,6 @@
     left: 0;
     color: white;
 }
-
 .recommend_btn>a {
     width: 48px;
     height: 48px;
@@ -591,21 +484,14 @@
     top: 50%;
     margin-top: -24px;
 }
-
 .recommend_btn .prev {
     background: url(../img/prev.png) no-repeat;
     left: -50px;
 }
-
 .recommend_btn .next {
     background: url(../img/next.png) no-repeat;
     right: -50px;
 }
-
-
-/*news*/
-
-
 
 /*news*/
 .news {
@@ -615,17 +501,14 @@
 .news_detail{
     margin: 30px 0 50px 0;
 }
-
 .news_item {
     width: 50%;
     float: left;
     margin-top: 40px;
 }
-
 .news_item>div {
     float: left;
 }
-
 .news_item_left {
     width: 82px;
     height: 82px;
@@ -634,7 +517,6 @@
 .news_item_left:hover{
     animation: circle 1s;
 }
-
 @keyframes circle {
     0%{
         top: -20px;
@@ -642,7 +524,6 @@
     100%{
         top: 0px;
     }
-
 }
 .news_item_left span {
     font-size: 40px;
@@ -653,30 +534,34 @@
     margin-top: -28px;
     margin-left: -23px;
 }
-
 .news_item_left img {
     width: 100%;
     height: 100%;
 }
-
 .news_item_right {
     width: 400px;
     margin-left: 20px;
 }
-
 .news_item_right h4 {
     font-size: 21px;
     color: #4A4A4A;
     font-weight: normal;
 }
-
 .news_item_right p {
     font-size: 18px;
     color: #807E7E;
     line-height: 24px;
     margin-top: 10px;
 }
+.footer{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 .footer_top{
+   
+    margin: 0 auto;
     background: #06142F;
 }
 .footer_bottom{
