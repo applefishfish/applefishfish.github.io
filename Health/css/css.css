@@ -609,7 +609,7 @@ header .nav-layout ul li a {
 }
 @media only screen and (max-width: 80em){
     .content .news-and-notice{
-        width:80%;
+        width:65%;
         
     }
 }
@@ -617,7 +617,7 @@ header .nav-layout ul li a {
 @media only screen and (max-width: 50em){
     
     .content .news-and-notice{
-        width:50%;
+        width:95%;
         
        
       
