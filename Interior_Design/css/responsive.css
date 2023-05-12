@@ -3,16 +3,17 @@
 
 @media only screen and (max-width: 80em){
     .top .service{
-        display: none;
+        width:95%;
      }
      .logo{
         width:95%;
 
      }
      .search_box{
-       display: none;
+        width:95%;
 
      }
+     
    
    
     
@@ -24,10 +25,7 @@
 }
 
         
-    
-     
-    
-   
+ 
 
 @media only screen and (min-width: 30.0625em) and (max-width: 50em) {
     .top{
@@ -133,6 +131,10 @@
    
 
 }
+
+
+
+
 /*product*/
 
 @media only screen and (max-width: 80em){
@@ -227,7 +229,7 @@
 
     }
     .about_left{
-        width:90%;
+        width:50%;
         
     }
     .about_middle{
@@ -235,7 +237,7 @@
 
     }
     .about_right{
-        width:90%;
+        width:80%;
 
     }
     
@@ -279,7 +281,7 @@
 
 @media only screen and (max-width: 30em) {
     .recommend{
-        width:90%;
+        width:100%;
       
         
        
@@ -293,11 +295,11 @@
 
     }
     .recommend_swiper{
-        width:95%;
+        width:100%;
 
     }
     .recommend_swiper_img{
-        width:50%;
+        width:80%;
 
     }
   
@@ -319,7 +321,7 @@
 
 @media only screen and (max-width: 50em) {
     .news {
-        width:95%;
+        width:100%;
     }
     .news_item{
         width:95%;
