@@ -1,3 +1,4 @@
+
 .top{
     width:100%;
     background-color:#0058AA;
@@ -29,6 +30,9 @@
 .logo,
 .nav_box {
     float: left;
+}
+{
+    display: none;
 }
 .search_box {
     margin-top:30px;
@@ -126,7 +130,7 @@
   }
 }
 .site-head{
-    min-width: 1152px;
+    min-width: 100%;
     height:150px;
 }
 .site-head .topbar{
@@ -229,7 +233,7 @@
     position:relative;
 }
 .product .swiper_img{
-    width:1155px;
+    width:100%;
     height:300px;
     margin:0 auto;
 }
