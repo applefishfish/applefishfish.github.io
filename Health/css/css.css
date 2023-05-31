@@ -38,8 +38,7 @@ a{
 
 
 body{
-    font: normail 14px/25px; PingFangSCRegular,
-    font-size:1.2rem;
+    font: normail 14px/25px; 
     line-height:1.5;
  
    
@@ -52,11 +51,12 @@ a{
 
 }
 @font-face {
-    font-family: "PingFangSCRegular";
-    src: url(../fonts/PingFangSCRegular.ttf);
- 
-    
-  }
+    font-family: 'Glyphicons Halflings';
+
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix)
+        format(embedded-opentype),url(../fonts/glyphicons-halflings-regular.woff2) format(woff2), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format(truetype), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format(svg);
+}
 
    
 
@@ -76,16 +76,23 @@ header .header-top{
 }
 header .header-top .logo{
     padding-top:27px;
-    width: 221px;
-    height: 63px;
+    width: 300px;
+    height: 80px;
     float:left;
     color:  #015e58;
     font-size:20px;
+    
 
 }
 header .header-top .logo h1{
-    width: 221px;
-    height: 63px;
+    width: 300px;
+    height: 80px;
+    background-image:url(../images/logo.png);
+    background-repeat:no-repeat;
+
+    /*hide text*/
+    text-indent:-9999em;
+
   
     
 }
