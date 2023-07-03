@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h1 { 
 	font-size: 36px; 
-	color: #DF151C; 
+	color: #640260; 
 	font-weight: normal; 
 	margin: 0 0 8px 0; 
 	font-family:Helvetica Neue;
@@ -39,20 +39,20 @@ h2 {
 }
 h3 {
 	font-size:18px; 
-	color: #DF151C; 
+	color: #ffffff; 
 	font-weight:bold; 
 	padding-top:25px;
 }
 h4 { 
 	font-size:16px; 
-	color: #DF151C; 
+	color: #640260; 
 	font-weight: bold;
 	font-family:Helvetica Neue;
 	padding-top:25px;
 }
 h5 {
 	font-size:15px; 
-	color: #DF151C; 
+	color: #640260; 
 	font-weight: bold;
 	font-family:Helvetica Neue;
 }
@@ -79,7 +79,7 @@ a{
 }
 #header {
 	width: 100%;
-	background:#DF151C; 
+	background:#640260; 
 	height:50px;
 }
 
@@ -107,7 +107,7 @@ a{
 
 }
 .navbar li a:hover { 
-	color:#FFCD41;
+	color:#02857E;
 
 	text-decoration:none; 
 }
@@ -171,7 +171,7 @@ ul#mainnav li {
 	padding-left:20px; 
 	padding-right:20px; 
 	margin-top:30px; 
-	background:#FFCD41;
+	background:#02857E;
 }
 .mobileimage{ 
 	margin-top:-280px;
@@ -233,14 +233,14 @@ ul#mainnav li {
 	}
 .login {
 	width:100%;
-	background:#FFCD41;
+	background:#02857E;
 	
 	text-align:center;
 }
 .login a {
 	width:100%;
 	padding:20px;
-	color:#505050!important;
+	color:#FFF!important;
 	text-decoration: none;
 }
 .ad {
